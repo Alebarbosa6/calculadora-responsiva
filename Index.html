@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		function botao(num) {
+			var salvo = document.calc.visor.value;
+			document.calc.visor.value = salvo + num;
+		}
+		function resultado() {
+			var salvo = eval(document.calc.visor.value);
+			document.calc.visor.value = salvo;
+		}
+	</script>
+</head>
+
+<body>
+	<header class="cabecalho">
+        <div class="container">
+            <img class="container__imagem" src="Logo.png" alt="">
+            <h1 class="container__titulo">Calculadora</h1>
+            <p class="container__frase">"Criada para aprender programação WEB"</p>
+        </div>
+    </header>
+	
+	<form name="calc" class="calculadora">
+		<input type="text" name="visor" id="visor" size="10">
+		<br>
+		<input type="button" value="7" onclick="botao(value);">
+		<input type="button" value="8" onclick="botao(value);">
+		<input type="button" value="9" onclick="botao(value);">
+		<input type="button" class="operador" value="/" onclick="botao(value);">
+		<br><br>
+
+		<input type="button" value="4" onclick="botao(value);">
+		<input type="button" value="5" onclick="botao(value);">
+		<input type="button" value="6" onclick="botao(value);">
+		<input type="button" class="operador" value="*" onclick="botao(value);">
+		<br><br>
+
+		<input type="button" value="1" onclick="botao(value);">
+		<input type="button" value="2" onclick="botao(value);">
+		<input type="button" value="3" onclick="botao(value);">
+		<input type="button" class="operador" value="-" onclick="botao(value);">
+		<br><br>
+
+		<input type="button" value="0" onclick="botao(value);">
+		<input type="reset" value="C">
+		<input type="button" class="resultado" value="=" onclick="resultado();">
+		<input type="button" class="operador" value="+" onclick="botao(value)" ;>
+		<br>
+	</form>
+</body>
+
+</html>

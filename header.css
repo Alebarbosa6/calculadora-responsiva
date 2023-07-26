@@ -1,0 +1,41 @@
+.cabecalho{
+    background-color: var(--cor-cabecalho);
+    padding: 1em;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+
+}
+
+.container__imagem, .container__titulo, .container__frase{
+    padding: 1em;
+}
+
+.container__titulo, .container__frase{
+    display: none;
+}
+
+@media screen and (min-width:820px) {
+    .container__titulo{
+        font-size: 30px;
+
+    }
+    .container__titulo{
+        display: block;
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container__frase{
+        display: block;
+        font-size: 20px;
+        padding-left: 5em;
+    }
+}

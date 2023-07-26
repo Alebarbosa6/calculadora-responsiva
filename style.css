@@ -1,0 +1,86 @@
+@import url(header.css);
+:root{
+    --cor-de-fundo:#fffff2;
+    --cor-cabecalho:#cacaa3;
+}
+
+
+h1{
+    font-weight: normal;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    margin: 0;
+    width: auto;
+    margin: 4% auto;
+}
+
+.calculadora {
+    background-color: #eaeac2;
+    padding: 1em;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 30vw;
+    font-family: "Helvetica";
+    color: #6d6d6d;
+    margin: 0px 0 10px 0;
+}
+
+#visor {
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    height: 60px;
+    text-align: right;
+    font-size: 32px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#visor:hover {
+    border: 1px solid #bbb;
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.calculadora input {
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    width: 52px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color:#fffff2;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.calculadora input.resultado {
+    border: 1px solid #c7cf9f;
+    background-color: #edefe1;
+}
+
+.calculadora input.resultado:hover {
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #c7cf9f;
+    background-color: #edefe1;
+}
+
+.calculadora input.operador {
+    border: 1px solid #bbb;
+    background-color: #ccccab;
+}
+
+.calculadora input.operador:hover {
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #aaa;
+    background-color: #ccccab;
+}
